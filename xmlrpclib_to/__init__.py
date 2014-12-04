@@ -45,5 +45,4 @@ class TimeoutTransport(xmlrpclib.Transport):
                 chost, timeout=self.timeout
             )
 
-
         return self._connection[1]
