@@ -33,7 +33,7 @@ setup(
     name='xmlrpclib-to',
     version='0.1.1',
     packages=find_packages(),
-    test_requires=test_requires,
+    tests_requires=test_requires,
     cmdclass={'test': PyTest},
     url='http://github.com/gisce/xmlrpclib-to',
     license='MIT',
