@@ -22,10 +22,9 @@ class PyTest(TestCommand):
         errno = pytest.main(self.pytest_args)
         sys.exit(errno)
 
-test_requires = [
+TESTS_REQUIRE = [
     'pytest',
-    # ATM we need this patch
-    'https://github.com/ecarreras/HTTPretty/archive/simulating_timeout.zip'
+    'httpretty'
 ]
 
 
@@ -33,7 +32,7 @@ setup(
     name='xmlrpclib-to',
     version='0.1.1',
     packages=find_packages(),
-    tests_requires=test_requires,
+    tests_require=TESTS_REQUIRE,
     cmdclass={'test': PyTest},
     url='http://github.com/gisce/xmlrpclib-to',
     license='MIT',

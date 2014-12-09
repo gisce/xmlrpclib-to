@@ -3,6 +3,8 @@ python:
   - "2.7"
   - "3.4"
 install:
-  - "pip install -e ."
+  # ATM we need the simulation of socket timeout
+  - pip install https://github.com/ecarreras/HTTPretty/archive/simulating_timeout.zip
+  - pip install -e .
 script:
   - python setup.py test -a tests/*.py
