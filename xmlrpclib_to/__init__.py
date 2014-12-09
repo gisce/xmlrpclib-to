@@ -6,7 +6,10 @@ except ImportError:
     import xmlrpc.client as xmlrpclib
     from xmlrpc.client import *
 
-import httplib
+try:
+    import httplib
+except ImportError:
+    import http.client as httplib
 import socket
 
 
