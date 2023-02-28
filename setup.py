@@ -30,7 +30,7 @@ TESTS_REQUIRE = [
 
 setup(
     name='xmlrpclib-to',
-    version='0.1.1',
+    version='0.1.2',
     packages=find_packages(),
     tests_require=TESTS_REQUIRE,
     cmdclass={'test': PyTest},
